@@ -1,6 +1,6 @@
 ---
 description: "Guía unificada de mejores prácticas y reglas para el desarrollo con WordPress y PHP, incluyendo estándares, OOP, APIs, hooks, seguridad y convenciones."
-globs: ["**/*.php"]
+globs: *.php
 alwaysApply: false
 ---
 

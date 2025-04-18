@@ -1,6 +1,6 @@
 ---
-description: 
-globs: 
+description:
+globs: src/**/.py
 alwaysApply: false
 ---
 
@@ -63,4 +63,3 @@ alwaysApply: false
     - Structure tasks and dependencies clearly to optimize readability and maintainability.
 
   Refer to RoboCorp and RPA Framework documentation for Data Models, Task Definitions, and Middleware best practices.
-    

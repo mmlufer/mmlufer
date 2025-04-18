@@ -1,0 +1,59 @@
+---
+description: Mejores prácticas para crear, actualizar y usar servidores MCP (Model Context Protocol) con Python
+globs: 
+alwaysApply: false
+---
+
+# Reglas y Mejores Prácticas para crear y actualizar MCP con Python
+
+## Mejores Prácticas MCP
+
+- Definir esquemas MCP claros y consistentes.
+- Usar versionado en MCP para gestionar cambios y actualizaciones.
+- Implementar manejo adecuado de errores y logging en operaciones MCP.
+- Garantizar la seguridad de MCP validando y sanitizando todos los datos de entrada.
+- Usar programación asíncrona para operaciones MCP cuando sea aplicable.
+- Documentar a fondo las interfaces MCP y los ejemplos de uso.
+- Probar regularmente las implementaciones MCP con diversos escenarios y casos límite.
+
+## Configuración de MCP
+
+- **Cursor**: La configuración se realiza en el archivo `@mcp.json` ubicado en `.cursor/mcp.json`
+- **Claude Desktop**: La configuración se realiza en el archivo `@claude_desktop_config.json`
+
+Cada entorno requiere su propia configuración de MCP, aunque la estructura es similar.
+
+## Seguridad en Servidores MCP
+
+- Seguir las mejores prácticas de seguridad MCP.
+- Manejar adecuadamente las variables de entorno y opciones de configuración.
+- Implementar validación de errores apropiada.
+
+## Solución de Problemas
+
+### Documentación oficial del SDK Python
+
+Se encuentra en @Python MCP SDK
+
+### Problemas Comunes
+
+1. **Error de Conexión**
+
+   - Verificar que Python está en el PATH
+   - Comprobar que el servidor MCP está ejecutándose
+   - Revisar logs en `.cursor/logs/mcp.log`
+
+2. **Errores de Importación**
+
+   - Verificar PYTHONPATH
+   - Comprobar estructura del proyecto
+   - Revisar dependencias en requirements.txt
+
+3. **Problemas de Permisos**
+   - Verificar permisos de archivos
+   - Comprobar variables de entorno
+   - Revisar configuración de seguridad
+
+## Recursos Adicionales
+- Documentación MCP Protocol: https://github.com/modelcontextprotocol/python-sdk/
+- API Reference: https://github.com/modelcontextprotocol/python-sdk/docs/api.md

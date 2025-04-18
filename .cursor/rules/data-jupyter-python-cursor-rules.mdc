@@ -1,7 +1,6 @@
 ---
-description: "Instrucciones para análisis de datos con Python, Jupyter Notebooks y bibliotecas científicas como pandas, matplotlib, seaborn y numpy."
-globs:
-  ["**/*.ipynb", "**/*data*.py", "**/*analysis*.py", "**/notebooks/**/*.py"]
+description: 
+globs: src/**/*.py
 alwaysApply: false
 ---
 
