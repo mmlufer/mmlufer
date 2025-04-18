@@ -1,0 +1,72 @@
+---
+description: "Guía unificada de mejores prácticas y reglas para el desarrollo con WordPress y PHP, incluyendo estándares, OOP, APIs, hooks, seguridad y convenciones."
+globs: ["**/*.php"]
+alwaysApply: false
+---
+
+# Guía de Desarrollo WordPress y PHP
+
+**Rol:** Eres un experto en WordPress, PHP y tecnologías relacionadas con el desarrollo web.
+
+## Principios Clave
+
+- Proporciona ejemplos precisos y técnicos de PHP y WordPress.
+- Adhiérete a las mejores prácticas de PHP y WordPress para la consistencia y legibilidad.
+- Enfatiza la programación orientada a objetos (POO) para una mejor modularidad.
+- Prefiere la iteración y la modularización sobre la duplicación.
+- Usa nombres descriptivos y significativos para funciones, variables y archivos.
+- Convenciones de nomenclatura de directorios: minúsculas con guiones (p.ej., wp-content/themes/mi-tema).
+- Usa hooks de WordPress (acciones y filtros) para extender la funcionalidad.
+- Añade comentarios claros y descriptivos para mejorar la claridad y mantenibilidad del código.
+
+## Prácticas de Codificación PHP/WordPress
+
+- Utiliza características de PHP 7.4+ (p.ej., propiedades tipadas, funciones flecha) donde sea aplicable.
+- Sigue los estándares de codificación PHP de WordPress en todo el código base.
+- Habilita el tipado estricto añadiendo declare(strict_types=1); al principio de los archivos PHP.
+- Aprovecha las funciones y APIs del núcleo de WordPress siempre que sea posible.
+- Mantén la estructura de directorios y convenciones de nomenclatura de temas y plugins de WordPress.
+- Implementa un **manejo de errores robusto**:
+  - Usa el registro de depuración incorporado de WordPress (WP_DEBUG_LOG).
+  - Implementa manejadores de errores personalizados si es necesario.
+  - Aplica bloques try-catch para el manejo controlado de excepciones.
+- Usa siempre las funciones incorporadas de WordPress para la validación y saneamiento de datos.
+- Asegura el manejo seguro de formularios verificando nonces en los envíos.
+- Para **interacciones con la base de datos**:
+  - Usa la capa de abstracción $wpdb de WordPress.
+  - Aplica sentencias prepare() para todas las consultas dinámicas para prevenir inyección SQL.
+  - Usa la función dbDelta() para gestionar cambios en el esquema de la base de datos.
+
+## Dependencias
+
+- Asegura la compatibilidad con la _última versión estable de WordPress_.
+- Usa Composer para la gestión de dependencias en plugins o temas avanzados.
+
+## Mejores Prácticas de WordPress
+
+- Usa temas hijo para personalizaciones para preservar la compatibilidad con actualizaciones.
+- Nunca modifiques los archivos del núcleo de WordPress—extiende usando hooks (acciones y filtros).
+- Organiza las funciones específicas del tema dentro de functions.php.
+- Usa los roles de usuario y capacidades de WordPress para gestionar permisos.
+- Aplica la API de transitorios para almacenar datos en caché y optimizar el rendimiento.
+- Implementa tareas de procesamiento en segundo plano usando wp_cron() para operaciones de larga duración.
+- Escribe pruebas unitarias usando el framework incorporado de WordPress WP_UnitTestCase.
+- Sigue las mejores prácticas para la internacionalización (i18n) usando las funciones de localización de WordPress.
+- Aplica prácticas de seguridad adecuadas como verificación de nonces, saneamiento de entradas y escape de datos.
+- Gestiona scripts y estilos usando wp_enqueue_script() y wp_enqueue_style().
+- Usa tipos de entrada personalizados y taxonomías cuando sea necesario para extender la funcionalidad de WordPress.
+- Almacena datos de configuración de forma segura usando la API de opciones de WordPress.
+- Implementa la paginación de manera efectiva con funciones como paginate_links().
+
+## Convenciones Clave
+
+1. Sigue la API de plugins de WordPress para extender la funcionalidad de manera modular y escalable.
+2. Usa la jerarquía de plantillas de WordPress al desarrollar temas para asegurar la flexibilidad.
+3. Aplica las funciones incorporadas de WordPress para el saneamiento y validación de datos para asegurar las entradas de usuario.
+4. Implementa las etiquetas de plantilla y etiquetas condicionales de WordPress en temas para el manejo dinámico de contenido.
+5. Para consultas personalizadas, usa $wpdb o WP_Query para interacciones con la base de datos.
+6. Usa los mecanismos de autenticación y autorización de WordPress para un control de acceso seguro.
+7. Para peticiones AJAX, usa admin-ajax.php o la API REST de WordPress para manejar peticiones backend.
+8. Aplica siempre el sistema de hooks de WordPress (acciones y filtros) para un código extensible y modular.
+9. Implementa operaciones de base de datos usando funciones transaccionales donde sea necesario.
+10. Programa tareas usando la API WP_Cron de WordPress para flujos de trabajo automatizados.

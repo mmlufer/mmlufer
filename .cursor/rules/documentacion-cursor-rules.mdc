@@ -1,0 +1,151 @@
+---
+description: 
+globs: *.md
+alwaysApply: false
+---
+
+# Guías de Documentación
+
+## Estructura de Documentación
+
+1. **Organización de Archivos**
+   - `/docs`: Directorio principal de documentación
+     - `/docs/api`: Documentación de APIs y endpoints
+     - `/docs/guides`: Guías de usuario y tutoriales
+     - `/docs/development`: Guías de desarrollo
+     - `/docs/security`: Documentación de seguridad
+     - `/docs/architecture`: Documentación de arquitectura
+
+2. **Archivos Principales**
+   - `README.md`: Visión general del proyecto y guía rápida
+   - `CONTRIBUTING.md`: Guías de contribución
+   - `SECURITY.md`: Políticas de seguridad
+   - `CHANGELOG.md`: Registro de cambios
+   - `LICENSE.md`: Información de licencia
+
+## Principios de Documentación
+
+1. **Separación de Responsabilidades**
+   - Cada archivo debe tener un propósito único y claro
+   - Evitar mezclar diferentes tipos de información
+   - Usar referencias cruzadas en lugar de duplicar contenido
+   - Mantener la documentación cerca del código que describe
+
+2. **Estructura de Archivos MD**
+   - Comenzar con un título descriptivo (h1)
+   - Incluir una breve descripción del propósito
+   - Usar encabezados jerárquicos (h2, h3, etc.)
+   - Mantener una estructura consistente
+
+3. **Contenido**
+   - Usar lenguaje claro y conciso
+   - Incluir ejemplos prácticos
+   - Mantener la información actualizada
+   - Documentar tanto el "qué" como el "por qué"
+
+## Mejores Prácticas
+
+1. **Formato**
+   ```markdown
+   # Título Principal
+
+   ## Descripción
+   Breve descripción del propósito...
+
+   ## Contenido Principal
+   ### Subtema 1
+   - Punto clave 1
+   - Punto clave 2
+
+   ### Subtema 2
+   Explicación detallada...
+
+   ## Referencias
+   - [Enlace 1](mdc:mmlufer/mmlufer/mmlufer/mmlufer/mmlufer/mmlufer/mmlufer/url1)
+   - [Enlace 2](mdc:mmlufer/mmlufer/mmlufer/mmlufer/mmlufer/mmlufer/mmlufer/url2)
+   ```
+
+2. **Enlaces y Referencias**
+   - Usar enlaces relativos para documentación interna
+   - Mantener enlaces externos en una sección de referencias
+   - Verificar regularmente la validez de los enlaces
+
+3. **Mantenimiento**
+   - Revisar y actualizar la documentación con cada cambio
+   - Eliminar contenido obsoleto
+   - Mantener un registro de cambios actualizado
+
+## Checklist de Documentación
+
+- [ ] Estructura clara y consistente
+- [ ] Propósito único por archivo
+- [ ] Enlaces y referencias actualizados
+- [ ] Ejemplos prácticos incluidos
+- [ ] Información actualizada
+- [ ] Formato correcto
+- [ ] Referencias cruzadas apropiadas
+
+## Ejemplos de Organización
+
+```
+/docs/
+├── api/
+│   ├── endpoints.md
+│   ├── authentication.md
+│   └── examples.md
+├── guides/
+│   ├── getting-started.md
+│   ├── installation.md
+│   └── troubleshooting.md
+├── development/
+│   ├── architecture.md
+│   ├── contributing.md
+│   └── testing.md
+└── README.md
+```
+
+## Plantillas
+
+### Para Guías de Usuario
+```markdown
+# Título de la Guía
+
+## Descripción
+Breve descripción del propósito...
+
+## Prerrequisitos
+- Requisito 1
+- Requisito 2
+
+## Pasos
+1. Primer paso...
+2. Segundo paso...
+
+## Ejemplos
+Ejemplos de uso...
+
+## Solución de Problemas
+Problemas comunes y soluciones...
+```
+
+### Para Documentación Técnica
+```markdown
+# Componente/Característica
+
+## Visión General
+Descripción técnica...
+
+## Arquitectura
+Detalles de implementación...
+
+## API
+Descripción de la API...
+
+## Ejemplos de Código
+\```javascript
+// Ejemplo de código
+\```
+
+## Consideraciones
+Notas importantes...
+```

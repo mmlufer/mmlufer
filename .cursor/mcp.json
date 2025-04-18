@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp.server.filesystem",
+        "C:\\Users\\mmluf\\OneDrive - Fundación ProMITIERRA\\Escritorio\\IA Work",
+        "C:\\Users\\mmluf\\Downloads"
+      ]
+    },
+    "github": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp.server.github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    }
+  }
+}

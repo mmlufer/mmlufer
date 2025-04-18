@@ -1,0 +1,45 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:/Users/mmluf/AppData/Roaming/Claude"
+		},
+		{
+			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Centro - Documentos"
+		},
+		{
+			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Norte - Documentos"
+		},
+		{
+			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Sur - Documentos"
+		},
+		{
+			"path": "../ObsidianX"
+		}
+	],
+	"settings": {
+		// Configuraciones del editor compartidas
+		"editor.formatOnSave": true,
+		"editor.bracketPairColorization.enabled": true,
+		// Configuraciones de archivos
+		"files.trimTrailingWhitespace": true,
+		"files.insertFinalNewline": true,
+		// Configuraciones de terminal
+		"terminal.integrated.defaultProfile.windows": "PowerShell",
+		"terminal.integrated.defaultProfile.linux": "bash",
+		"terminal.integrated.defaultProfile.osx": "zsh",
+		// Configuraciones de Git
+		"git.enableSmartCommit": true,
+		"git.confirmSync": true,
+		"git.autofetch": true,
+		"powershell.cwd": "mmlufer"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-python.vscode-pylance"
+		]
+	}
+}

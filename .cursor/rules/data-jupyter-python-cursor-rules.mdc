@@ -1,0 +1,92 @@
+---
+description: "Instrucciones para análisis de datos con Python, Jupyter Notebooks y bibliotecas científicas como pandas, matplotlib, seaborn y numpy."
+globs:
+  ["**/*.ipynb", "**/*data*.py", "**/*analysis*.py", "**/notebooks/**/*.py"]
+alwaysApply: false
+---
+
+# Directrices para Análisis de Datos con Python
+
+Como experto en análisis de datos, visualización y desarrollo de Jupyter Notebook con bibliotecas Python como pandas, matplotlib, seaborn y numpy, sigue estas directrices:
+
+## Principios Fundamentales
+
+- Escribe respuestas técnicas concisas con ejemplos precisos de Python
+- Prioriza legibilidad y reproducibilidad en flujos de trabajo de análisis
+- Usa nombres de variables descriptivos que reflejen los datos que contienen
+- Prefiere operaciones vectorizadas sobre bucles para mejor rendimiento
+- Aplica programación funcional cuando sea apropiado; evita clases innecesarias
+- Sigue las directrices de estilo PEP 8 para código Python
+
+## Patrones Recomendados
+
+### Mejores Prácticas para Jupyter Notebook:
+
+- Estructura los notebooks con secciones claras usando celdas markdown.
+- Utiliza un orden de ejecución de celdas significativo para garantizar la reproducibilidad.
+- Incluye texto explicativo en celdas markdown para documentar los pasos del análisis.
+- Mantén las celdas de código enfocadas y modulares para facilitar la comprensión y depuración.
+- Usa comandos mágicos como %matplotlib inline para gráficos integrados.
+
+### Para Manipulación de Datos
+
+- Usa pandas para manipulación y análisis de datos.
+- Prefiere el encadenamiento de métodos para transformaciones de datos cuando sea posible.
+- Utiliza loc e iloc para la selección explícita de datos.
+- Aprovecha las operaciones groupby para una agregación eficiente de datos.
+
+### Optimización de Rendimiento:
+
+- Utiliza operaciones vectorizadas en pandas y numpy para mejorar el rendimiento.
+- Aprovecha estructuras de datos eficientes (p. ej., tipos de datos categóricos para columnas de cadenas de baja cardinalidad).
+- Considera usar dask para conjuntos de datos más grandes que la memoria.
+- Perfila el código para identificar y optimizar cuellos de botella.
+
+### Para Visualizaciones
+
+- Usa matplotlib para control detallado y seaborn para estadísticas
+- Crea gráficos informativos con etiquetas, títulos y leyendas apropiadas
+- Considera accesibilidad (esquemas de colores para daltónicos)
+- Crea funciones de graficación reutilizables para visualizaciones consistentes
+
+## Prácticas Efectivas
+
+- Implementa verificaciones de calidad de datos al inicio del análisis
+- Maneja datos faltantes adecuadamente (imputación, eliminación o marcado)
+- Usa tipos de datos eficientes (categorical para strings de baja cardinalidad)
+- Considera dask para conjuntos de datos más grandes que la memoria
+- Documenta versiones de dependencias para reproducibilidad
+- Usa control de versiones para seguimiento de cambios en notebooks
+
+Manejo de Errores y Validación de Datos:
+
+- Implementa verificaciones de calidad de datos al inicio del análisis.
+- Maneja datos faltantes adecuadamente (imputación, eliminación o marcado).
+- Utiliza bloques try-except para operaciones propensas a errores, especialmente al leer datos externos.
+- Valida tipos de datos y rangos para garantizar la integridad de los datos.
+
+## Evitar
+
+- Bucles explícitos para operaciones vectorizables
+- Variables temporales innecesarias
+- Nombres de variables de una sola letra (excepto para coordenadas)
+- Mezclar análisis con visualización en la misma celda
+- Hard-coding de valores que podrían cambiar
+
+## Dependencias:
+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- jupyter
+- scikit-learn (para tareas de aprendizaje automático)
+
+## Convenciones Clave:
+
+1. Comienza el análisis con exploración de datos y estadísticas resumidas.
+2. Crea funciones de graficación reutilizables para visualizaciones consistentes.
+3. Documenta fuentes de datos, supuestos y metodologías claramente.
+4. Utiliza control de versiones (p. ej., git) para seguimiento de cambios en notebooks y scripts.
+
+Consulta la documentación oficial de pandas, matplotlib y Jupyter para conocer las mejores prácticas y APIs actualizadas.

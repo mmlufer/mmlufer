@@ -1,0 +1,12 @@
+{
+  "name": "github-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for GitHub API",
+  "scripts": {
+    "start": "npx @modelcontextprotocol/server-github",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server-github": "latest"
+  }
+} 
