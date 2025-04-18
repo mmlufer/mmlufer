@@ -61,9 +61,10 @@ Objetivo principal y resultado esperado de forma concisa.
 ### Orientaciones para la implementacion de la tarea
 
 - La realizacion de la tarea debe hacerce con python
-- Cada tarea debe tener **un script principal y único** ubicado en [Directorio para Scripts](mdc:mmlufer-lab/src/scripts) y debe nombrarse "[Tarea_ID] - Título Descriptivo.py"
-   - Si la ejecución de la tarea implica que el usuario interactúe con el script, sera por opciones en la línea de comandos. Por defecto, la ubicación sera en subdirectorios nombrados correctamente en[Resultados Tareas](mdc:mmlufer-lab/mmlufer-lab/resultados tareas>)
-   - Siempre
+- La documentación de la tarea (el archivo `.md`) debe crearse en [Directorio Tareas](mdc:docs/tareas) y nombrarse `[Tarea_ID] - Título Descriptivo.md`.
+- Cada tarea debe tener **un script principal y único** ubicado en [Directorio para Scripts](mdc:mmlufer-lab/mmlufer-lab/mmlufer-lab/mmlufer-lab/mmlufer-lab/mmlufer-lab/mmlufer-lab/mmlufer-lab/mmlufer-lab/mmlufer-lab/src/scripts) y debe nombrarse "[Tarea_ID] - Título Descriptivo.py"
+   - Si la ejecución de la tarea implica que el usuario interactúe con el script, sera por opciones en la línea de comandos y por defecto, la ubicación sera en subdirectorios nombrados correctamente dentro de [Resultados Tareas](<../../resultados tareas>)
+   - Siempre.
 - El seguimiento de la documentacion de la tarea se realizará en el mismo documento de la tarea correspondiente "[Tarea_ID] - Título Descriptivo"
 
 ### Changelog Tarea
