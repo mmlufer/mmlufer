@@ -1,22 +1,32 @@
 {
 	"folders": [
 		{
+			"name": "mmlufer-lab",
 			"path": "."
 		},
 		{
-			"path": "C:/Users/mmluf/AppData/Roaming/Claude"
+			"name": "Consolidado Engrega IPPTA´s & Planeadores",
+			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Sur - Documentos/2_OPERACION/CONSOLIDADO ENGREGA IPPTA´s & PLANEADORES"
 		},
 		{
-			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Centro - Documentos"
+			"name": "Operación Zona Centro",
+			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Centro - Documentos/2_OPERACION"
 		},
 		{
-			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Norte - Documentos"
+			"name": "Operación Zona Norte",
+			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Norte - Documentos/2_OPERACION"
 		},
 		{
-			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Sur - Documentos"
+			"name": "Operación Zona Sur",
+			"path": "C:/Users/mmluf/Fundación ProMITIERRA/TERRITORIAL EPSEA AMDELCA-Territorial Zona Sur - Documentos/2_OPERACION"
 		},
 		{
+			"name": "ObsidianX",
 			"path": "../ObsidianX"
+		},
+		{
+			"name": "Claude",
+			"path": "C:/Users/mmluf/AppData/Roaming/Claude"
 		}
 	],
 	"settings": {
@@ -34,7 +44,15 @@
 		"git.enableSmartCommit": true,
 		"git.confirmSync": true,
 		"git.autofetch": true,
-		"powershell.cwd": "mmlufer"
+		"powershell.cwd": "mmlufer",
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true
+		}
 	},
 	"extensions": {
 		"recommendations": [
