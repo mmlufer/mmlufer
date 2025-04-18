@@ -1,0 +1,2 @@
+# Requisitos básicos para el servidor MCP Calculadora
+mcp>=0.1.0
